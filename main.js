@@ -20,6 +20,7 @@ switch(gramsOfChiliPowder) {
   case 110:
   case 120:
     answer = "Needs more, but now it's tasty!";
+    break;
 }
 
   // Only change code above this line

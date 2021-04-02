@@ -1,23 +1,29 @@
-var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
-function golfScore(par, strokes) {
+function ramen(gramsOfChiliPowder) {
+  var answer = "";
   // Only change code below this line
-if (strokes === 1) {
-  return "Hole-in-one!";
-} else if (strokes <= par - 2) {
-  return "Eagle";
-} else if (strokes === par - 1) {
-  return "Birdie";
-} else if (strokes === par) {
-  return "Par";
-} else if (strokes === par + 1) {
-  return "Bogey";
-} else if (strokes === par + 2) {
-  return "Double Bogey";
-} else {
- return "Go Home!";
-}
- 
-  // Only change code above this line
+
+switch(gramsOfChiliPowder) {
+  case 10:
+  case 20:
+  case 30:
+    answer = "Mild";
+    break;
+  case 40:
+  case 50:
+  case 60:
+  case 70:
+  case 80:
+  case 90:
+    answer = "Spicy";
+    break;
+  case 100:
+  case 110:
+  case 120:
+    answer = "Needs more, but now it's tasty!";
 }
 
-golfScore(5, 4);
+  // Only change code above this line
+  return answer;
+}
+
+ramen(100);
